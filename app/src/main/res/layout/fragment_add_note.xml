@@ -1,0 +1,79 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addingNoteFragment"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minHeight="400dp"
+    android:minWidth="700dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/rounded_line"
+    tools:context="com.example.amarildo.notesmaster.AddNoteFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="7dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:weightSum="80">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:gravity="center"
+            android:text="Add a note"
+            android:id="@+id/myTitle"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8" />
+
+        <EditText
+            android:id="@+id/noteFieldEditText"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+
+            android:gravity="top|left"
+            android:textSize="25sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8">
+
+            <Button
+                android:id="@+id/addtoSaveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="5dp"
+                android:text="Add" />
+
+            <Button
+                android:id="@+id/dicardButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_toLeftOf="@+id/addtoSaveButton"
+                android:layout_toStartOf="@+id/addtoSaveButton"
+                android:text="Discard" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</FrameLayout>
